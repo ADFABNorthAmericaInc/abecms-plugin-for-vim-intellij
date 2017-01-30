@@ -1,7 +1,7 @@
 #Write your abe tags very easy with vim-plugin-for-abecms
 
 ##Install
-Add abe-autocomplete.vim to .vim/autoload folder then add 
+Add abecomplete.vim to .vim/autoload folder then add 
 
     setlocal completefunc=abecomplete#Complete
 
