@@ -1,5 +1,3 @@
-let s:matches=".fa-lg .fa-2x .fa-3x .fa-4x .fa-5x .fa-fw .fa-ul .fa-ul .fa-li .fa-li.fa-lg .fa-border .fa-pull-left .fa-pull-right .fa.fa-pull-left"
-
 function! GetType(slug)
 	if a:slug == "t"
 	   let type = "text"
@@ -81,12 +79,5 @@ function! abecomplete#Complete(findstart, base)
     else
         " find classes matching "a:base"
 			return GetPropositions(a:base)	 	  
-        let res = []
-        for m in split(s:matches)
-            if m =~ '^' . a:base
-                call add(res, m)
-            endif
-        endfor
-        return res
     endif
 endfun
