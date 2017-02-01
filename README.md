@@ -12,7 +12,7 @@ to your ~/.vimrc file.
 
 ##Use it
 The syntax is 
-    <type>[:tab_my_key]
+    <type>[:tab_my_desc]
 The types are the following letters for the corresponding meaning :
   
 * t => text  
