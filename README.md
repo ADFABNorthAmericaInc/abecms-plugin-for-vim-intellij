@@ -1,17 +1,19 @@
-#Write your abe tags very easy with vim-plugin-for-abecms
+#Write your abe tags very easy with abecms-plugin-for-vim-intellij
 
 ##Install for INTELLIJ/PHPSTORM
-Download ideaAbecms.jar and add it as a plugin in Preferences -> Plugins -> Install plugin from disk
+Download ideaAbecms/ideaAbecms.jar and add it as a plugin in Preferences -> Plugins -> Install plugin from disk
 
 ##Install for vim
-Add abecomplete.vim to .vim/autoload folder then add 
+Add vim/abecomplete.vim to ~/.vim/autoload folder then add 
 
     setlocal completefunc=abecomplete#Complete
 
-to your .vimrc file. 
+to your ~/.vimrc file. 
 
 ##Use it
-Start by taping one of the following letters for the corresponding type :
+The syntax is 
+    <type>[:tab_my_key]
+The types are the following letters for the corresponding meaning :
   
 * t => text  
 * i => image  
@@ -22,7 +24,7 @@ Start by taping one of the following letters for the corresponding type :
 * d => data  
 * s => slug  
 
-Then tape <Ctrl-X><Ctrl-U> or <Ctrl-RIGHT><Ctrl-RIGHT> for intellij/phpstorm, it will generate the tag.  
+Then tape <Ctrl-X><Ctrl-U> for vim and <Ctrl-RIGHT><Ctrl-RIGHT> for intellij/phpstorm, it will generate the tag.  
 If you want it to autofill the key, description and tab, follow the letter with ":" and the key.
 
 
